@@ -1,13 +1,12 @@
-
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 const FormData = require('form-data');
 
 // Bot configuration
-const BOT_TOKEN = '8392438827:AAGXG_6u2Tsgkm4cpRUV8ZsrCgvlKWOBITU';
-const GITHUB_TOKEN = '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';
-const GITHUB_OWNER = 'bunny737378';
-const GITHUB_REPO = 'Link-to-file-bot';
+const BOT_TOKEN = process.env.BOT_TOKEN;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_OWNER = process.env.GITHUB_OWNER || 'bunny737378';
+const GITHUB_REPO = process.env.GITHUB_REPO || 'Link-to-file-bot';
 
 // Initialize bot
 const bot = new TelegramBot(BOT_TOKEN, { polling: false });
