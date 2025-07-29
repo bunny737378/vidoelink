@@ -1,0 +1,27 @@
+{
+  "name": "telegram-file-upload-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot that uploads files to GitHub and provides streaming links",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "github",
+    "file-upload",
+    "vercel"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
